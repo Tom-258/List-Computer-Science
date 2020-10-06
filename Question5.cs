@@ -5,7 +5,7 @@ namespace List_Computer_Science
 {
     public class Question5
     {
-        public bool isASubset(List<int> list1, List<int> list2)
+        public bool IsASubset(List<int> list1, List<int> list2)
         {
             var shorterList = (list1.Count > list2.Count) ? list2 : list1;
             var longerList = (list1.Count < list2.Count) ? list2 : list1;

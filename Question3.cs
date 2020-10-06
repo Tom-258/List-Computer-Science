@@ -14,7 +14,7 @@ namespace List_Computer_Science
         public List<int> MyList { get; }
         public bool NaiveSearch(int item)
         {
-            bool isInMyList = false;
+            var isInMyList = false;
             foreach (var i in MyList)
             {
                 if (i == item)
@@ -29,17 +29,15 @@ namespace List_Computer_Science
 
         public bool SmartSearch(int item)
         {
-            bool isInMyList = false;
-            int startPoint = MyList.Count / 2;
+            var isInMyList = false;
+            var startPoint = MyList.Count / 2;
             if (item <= MyList[MyList.Count / 2])
             {
                 for (; startPoint >= 0 ; startPoint--)
                 {
-                    if (MyList[startPoint] == item)
-                    {
-                        isInMyList = true;
-                        break;
-                    }
+                    if (MyList[startPoint] != item) continue;
+                    isInMyList = true;
+                    break;
                 }
             }
             else
