@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -22,18 +23,20 @@ namespace List_Computer_Science
             var question4 = new Question4();
             var question5 = new Question5();
             var question6 = new Question6();
-            Console.WriteLine(question1.Sum(myList));
-            Console.WriteLine(question1.Max(myList));
-            Console.WriteLine(question1.Min(myList));
-            question1.Negatives(myList);
+            var question7 = new Question7(myList);
+            //Console.WriteLine(question1.Sum(myList));
+            //Console.WriteLine(question1.Max(myList));
+            //Console.WriteLine(question1.Min(myList));
+            //question1.Negatives(myList);
 
-            Console.WriteLine(question2.IsInBoth(myList, myList2));
-            Console.WriteLine(question3.NaiveSearch(4));
-            Console.WriteLine(question3.SmartSearch(-4));
+            //Console.WriteLine(question2.IsInBoth(myList, myList2));
+            //Console.WriteLine(question3.NaiveSearch(4));
+            //Console.WriteLine(question3.SmartSearch(-4));
 
-            question4.Repeated(myList4);
-            Console.WriteLine(question5.IsASubset(myList2, myList3));
-            question6.Reverse(myList4);
+            //question4.Repeated(myList4);
+            //Console.WriteLine(question5.IsASubset(myList2, myList3));
+            //question6.Reverse(myList4);
+            Console.WriteLine(question7.InsertionSort());
 
 
         }

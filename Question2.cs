@@ -9,7 +9,7 @@ namespace List_Computer_Science
             var isTheSame = true;
             foreach (var i in list1)
             {
-                isTheSame = (list2.Contains(i) != false);
+                isTheSame = list2.Contains(i);
             }
 
             return isTheSame;

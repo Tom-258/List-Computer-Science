@@ -55,7 +55,7 @@ namespace List_Computer_Science
             return isInMyList;
         }
 
-        private void BubbleSort()
+    private void BubbleSort()
         {
             for (var j = 0; j < MyList.Count; j++)
             {
